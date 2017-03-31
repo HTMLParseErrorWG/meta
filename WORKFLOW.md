@@ -1,7 +1,7 @@
 # Getting started
 
 At first create *working directory* and copy [update.sh](https://gist.github.com/inikulin/b8a9eea7fee5e3438925fb5a3981e777) to it. 
-Then run `update.sh` it will fetch all repositories you'll need for work and fetch their dependencies.
+Then run `update.sh`. It will fetch all repositories you'll need for work and their dependencies.
 
 # Adding error
 
@@ -11,8 +11,8 @@ and assign yourself.
 3. In `html` repository:
    1. Create new branch
    2. Add errors for chosen tokenizer state in `source` file. We add errors in format `<dfn data-x="parse-error-some-id">some-id</dfn>` (for
-      examples you can take a look at already added error codes, e.g. in `Data state`).Make sure you follow [formatting guidelines](https://github.com/whatwg/html/blob/master/CONTRIBUTING.md#formatting).
-      Avoid introducing new error codes if you can reuse existing without ambigiouty, e.g. `unexpected-null-character` error can be 
+      examples you can take a look at already added error codes, e.g. in `Data state`). Make sure you follow [formatting guidelines](https://github.com/whatwg/html/blob/master/CONTRIBUTING.md#formatting).
+      Avoid introducing new error codes if you can reuse existing without ambiguity, e.g. `unexpected-null-character` error can be 
       reused nearly in all occurences of NULL character in states.
    3. Build spec and check that everything looks as intended: go to `html-build` directory in *working directory* and run `build.sh`, 
       fix linting errors if there are any. Compiled spec (part in which we are interested) can be found in `html-build/output/multipage/syntax.html`.
@@ -31,8 +31,8 @@ and assign yourself.
    3. Run `parse5` tests to ensure that everything is fine.
    4. Issue pull request with change and add reviewers.
 6. In `parse5` repository:
-   1. Once tests PR gets merged issue pull request with change and add reviewers, thus we'll have tests ready for CI test run.
+   1. Once tests PR gets merged issue pull request with change and add reviewers. 
+   Thus, we'll have tests ready for CI test run.
 7. Mark state done in [spreadsheet](https://docs.google.com/spreadsheets/d/1uToTV8M0aBkgdIEDRRBt4f0fJ0kUZm92olXTa9_xClU/edit?usp=sharing).
 
-**NOTE:** You can include more than one state in each PR. It's up to you to choose granulation of your work. However, to avoid blocks, try to
-peek a reasonable number of states to work on in a row.
+**NOTE:** You can include more than one state in each PR. It's up to you to choose granulation of your work. However, to avoid blocks, try to peek a reasonable number of states to work on at each iteration.
