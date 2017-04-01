@@ -11,7 +11,7 @@ and assign yourself.
 3. In `html` repository:
    1. Create new branch
    2. Add errors for chosen tokenizer state in `source` file. We add errors in format `<dfn data-x="parse-error-some-id">some-id</dfn>` (for
-      examples you can take a look at already added error codes, e.g. in `Data state`). Make sure you follow [formatting guidelines](https://github.com/whatwg/html/blob/master/CONTRIBUTING.md#formatting).
+      examples you can take a look at already added error codes, e.g. in `Data state`). Make sure you follow [formatting guidelines](https://github.com/whatwg/html/blob/master/CONTRIBUTING.md#formatting). However, if error was defined previously and you just reuse existing code it should referenced as `<span data-x="parse-error-some-id">some-id</span>`
       Avoid introducing new error codes if you can reuse existing without ambiguity, e.g. `unexpected-null-character` error can be 
       reused nearly in all occurences of NULL character in states.
    3. Build spec and check that everything looks as intended: go to `html-build` directory in *working directory* and run `build.sh`, 
