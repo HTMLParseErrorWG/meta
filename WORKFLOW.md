@@ -22,7 +22,7 @@ and assign yourself.
    2. Add error reporting code, e.g. https://github.com/HTMLParseErrorWG/parse5/blob/master/lib/tokenizer/index.js#L648
    3. Run tests (`gulp test`) and figure out which tests fail.
 5. In `html5lib-tests` repository:
-   1. Add errors for failing tokenizer tests, e.g. https://github.com/HTMLParseErrorWG/html5lib-tests/blob/master/tokenizer/test3.test#L19
+   1. Add errors for failing tokenizer tests, e.g. https://github.com/HTMLParseErrorWG/html5lib-tests/blob/master/tokenizer/test3.test#L19. If there are no failing tests then add new tests for error. 
    2. Add errors for failing tree construction tests, e.g https://github.com/HTMLParseErrorWG/html5lib-tests/blob/master/tree-construction/foreign-fragment.dat#L177.
       Note that new errors should be temporary added in `#new-errors` section. Also, note that tokenizer errors don't have ranges for location,
       since they are bound to single character, so instead of `(1:44-1:44)` it should be `(1:44)`. Some test files contain exotic characters,
