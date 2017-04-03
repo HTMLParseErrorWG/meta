@@ -5,7 +5,7 @@ Then run `update.sh`. It will fetch all repositories you'll need for work and th
 
 # Adding error
 
-1. Peek tokenizer state you are going to work on in [spreadsheet](https://docs.google.com/spreadsheets/d/1uToTV8M0aBkgdIEDRRBt4f0fJ0kUZm92olXTa9_xClU/edit?usp=sharing)
+1. Pick tokenizer state you are going to work on in [spreadsheet](https://docs.google.com/spreadsheets/d/1uToTV8M0aBkgdIEDRRBt4f0fJ0kUZm92olXTa9_xClU/edit?usp=sharing)
 and assign yourself. 
 2. Run `update.sh` from your *working directory* to align with latest changes both in upstream and origin repositories. Pay attention to possible merge conflicts during rebase, resolve them manually if necessary.
 3. In `html` repository:
